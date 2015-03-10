@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> DBoT </title>
+		<link type = "text/css" href="style.css" rel="stylesheet"/>
+		<script src="jquery-1.11.2.min.js"></script>
+		<script type = "text/JavaScript" language="JavaScript" src ="home.js">
+		</script>
+		
+	</head>
+	
+	<body>
+		<h1 id="heading">
+			Database of Thrones
+		</h1>
+		<h2>
+		<a href="http://www.ilovealpacas.com/"> About the Authors</a>
+		</h2>
+		<div class="hidden">
+		</div>
+		<form id="form1" action ="results.php" method = "get">
+			<div id="inputs">
+				<div id="topLine">
+					<span> Please select on which category you would like to search:</span>
+					<select id = "entityDropDown" name ="entity"> 
+						<option class ="dropOption" value ="" disabled = "disabled" selected = "selected"> Please select an Entity</option>
+						<option class ="dropOption" value ="Character"> Character</option>
+						<option class ="dropOption" value ="Battle"> Battle</option>
+						<option class ="dropOption" value ="House"> House</option>
+						<option class ="dropOption" value ="Region"> Region</option>
+					</select>
+					
+						<span id="nameText"> Please enter a name: 
+							<input disabled id="name" name="q" type = "text"/>
+						</span>
+					<div id="nameRegion">
+					</div>
+				</div>
+			</div>
+			<input id = "resetButton" type="reset" onclick="clear();" value="Reset">
+			<input id = "submitButton" type="submit" value="Submit">
+		</form>
+		<footer>
+			<span id="footer">
+			This project was created for Csse333: Database Systems by Ben Efron, Katie lee, Trent Punt, and Collin Trowbridge
+			</span>
+		</footer>
+		
+	</body>
+</html>
